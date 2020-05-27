@@ -23,4 +23,5 @@ CALL h5dwrite_f(dset, H5T_NATIVE_REAL, f_ptr, hdferr)
 CALL h5dclose_f(dset , hdferr)
 CALL h5sclose_f(space, hdferr)
 CALL h5fclose_f(file , hdferr)
+write(*,*) ' DONE with Converthdf'
 end program convertHDF
